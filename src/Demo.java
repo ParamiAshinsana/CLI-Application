@@ -3,6 +3,9 @@ public class Demo {
     static Scanner input = new Scanner(System.in);
     static String login_array[][] = new String[1][2];
 
+    static String item_array[][] = new String[0][6];
+    static String supplie_array[][] = new String[0][2];
+
     public static void main(String[] args) {
         login_array[0][0] = "parami";
         login_array[0][1] = "0311";
