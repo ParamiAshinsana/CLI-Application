@@ -96,6 +96,7 @@ public class Demo {
 
                 case 4 :
                     clearConsole();
+                    logout();
                 case 5 :
                     clearConsole();
                     System.exit(5);
@@ -117,5 +118,10 @@ public class Demo {
         } catch (final Exception e) {
             System.err.println(e.getMessage());
         }
+    }
+    //    --------- Logout ---------
+    private static void logout() {
+        login();
+        clearConsole();
     }
 }
