@@ -98,8 +98,8 @@ public class Demo {
                     clearConsole();
                     logout();
                 case 5 :
-                    clearConsole();
                     System.exit(5);
+                    clearConsole();
             }
         }
     }
