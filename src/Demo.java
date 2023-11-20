@@ -11,6 +11,8 @@ public class Demo {
         login();
         HomePage();
     }
+
+    //    --------- Login Page ---------
     private static void login() {
         System.out.println("+---------------------------------------------------------------------------+");
         System.out.println("|                                LOGIN PAGE                                 |");
@@ -42,6 +44,7 @@ public class Demo {
             login();
         }
     }
+    //    --------- Check User's Name ---------
     private static boolean verifying_user_credential(String username) {
         for (String[] users : login_array) {
             if (users[0].equals(username)) {
@@ -50,6 +53,7 @@ public class Demo {
         }
         return false;
     }
+    //    --------- Check User's Password ---------
     private static boolean verifying_password_credential(String password) {
         for (String[] pw : login_array) {
             if (pw[1].equals(password)) {
@@ -58,6 +62,7 @@ public class Demo {
         }
         return false;
     }
+    //    --------- Home Page ---------
     private static void HomePage() {
         int option;
         while (true) {
@@ -94,6 +99,7 @@ public class Demo {
             }
         }
     }
+   //    --------- Clear Console ---------
     private static void clearConsole() {
         final String os = System.getProperty("os.name");
         try {
